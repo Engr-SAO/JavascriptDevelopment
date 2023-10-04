@@ -1,8 +1,8 @@
 # example netlify.toml
 [build]
-  command = "yarn run build"
+  command = "# no build command"
   functions = "netlify/functions"
-  publish = "/netlify/public"
+  publish = "public"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
@@ -19,3 +19,12 @@
   #  publish = "dist" # Folder with the static content for _redirect file
 
   ## more info on configuring this file: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+
+[[edge_functions]]
+    path = "/hello"
+    function = "hello"
+
+[[edge_functions]]
+    path = "/hello-template"
+    function = "transform-hello-template"
