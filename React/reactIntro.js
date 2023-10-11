@@ -1,3 +1,7 @@
+// to run react 
+//navigate to the folder and run npm start
+
+
 //ES6 in react 
 // classes in React
 class Car {
@@ -98,7 +102,7 @@ function calculate(a, b) {
   }
 
   //Nexted array destructing
-  const vehicleOne = {
+  const vehicleOne1 = {
     brand: 'Ford',
     model: 'Mustang',
     type: 'car',
