@@ -48,7 +48,7 @@ class Car {
   var k = 10; //has a function scope , not a block slope
   let g  = 6; //a block scope version of var..
   const v = 30; //a constant value; cannot be change
-
+ alert('concatenation ${k}, string')
   //Array usage
   const myArray = ['apple', 'banana', 'orange'];
 
@@ -112,6 +112,10 @@ function calculate(a, b) {
       city: 'Houston',
       state: 'Texas',
       country: 'USA'
+    },//nexted object
+
+    fun:function functionname(parameters){
+      console.log('Having a function inside an object variable');
     }
   }
   
@@ -120,3 +124,18 @@ function calculate(a, b) {
   function myVehicle({ model, registration: { state } }) {
     const message = 'My ' + model + ' is registered in ' + state + '.';
   }
+
+  const val = JSON.stringify(vehicleOne1); //convert object to JSON string
+  JSON.parse(val); //convert JSON back to object
+
+  localStorage.setItem('keep','value'); //store value in local storage so it doesnt delete with refreshing
+  localStorage.getItem('keep');
+
+  //DOM
+  <Script>
+    /*DOM*/
+    document.title = 'hello';
+    document.body.innerHTML = 'Body of the program'
+    document.querySelector('button'); //get html feaxture from a webpage
+  window. //represent the browser
+  </Script>
